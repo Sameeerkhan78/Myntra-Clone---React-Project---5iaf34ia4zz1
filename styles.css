@@ -146,9 +146,36 @@ s{
     font-size: 20px;
     margin-bottom: 10px;
 }
+#xbtnSize{
+    margin-left: 100px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent;
+    color: red;
+    font-weight: bold;
+}
+
 #option{
     display: flex;
     flex-direction: row;
+    padding: 10px;
+
+}
+#addcart{
+    margin-left: 300px;
+    width: max-content;
+    cursor: pointer;
+    padding: 10px;
+    font-size: large;
+    border-radius: 20px;
+    /* background: saddlebrown; */
+}
+#addcart:hover{
+   
+    background:  rgb(50, 2, 2);
+    color: white;
 }
 .size-option{
     padding: 20px;
