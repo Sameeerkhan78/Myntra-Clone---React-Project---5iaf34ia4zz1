@@ -1,1 +1,247 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(232, 231, 231);
+}
+.body{
+    display: flex;
+    flex-direction: row;
+    
+}
+.App nav{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: 0 1px 2px 0 rgba(133, 133, 133, 0.2), 0 1px 2px 0 rgba(111, 111, 111, 0.2);
+    background-color: white;
+}
 
+.type{
+    font-size: 13px;
+    font-weight: 700;
+    color: rgb(60, 60, 60);
+    margin: 25px;
+}
+
+.icon-holder img{
+    height: 50px;
+    width: 50px;
+    margin: 10px 50px;
+}
+
+nav input{
+    height : 30px;
+    margin: 10px;
+    background-color: rgb(243, 243, 243);
+    text-align: center;
+    border: 1px solid rgb(211, 202, 202);
+    border-radius: 5px;
+    
+}
+nav button{
+    height: 30px;
+    width: 60px;
+    background-color: rgb(231, 132, 196);
+    border:1px solid grey;
+    border-radius: 10px;
+    color: white;
+}
+
+
+.cart-holder{
+    margin-top: 20px;
+    margin-left: 700px;
+    
+}
+.cart-list-length{
+    margin-top: -25px;
+    padding-left: 3px;
+    color: black;
+    font-size: 30px;
+    
+}
+.cart-holder img{
+    height:30px;
+    width:30px;
+   width: 50px;
+   height: 50px;
+   cursor: pointer;
+}
+
+#filter-holder{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(91, 90, 90);
+    box-shadow: 0 1px 2px 0 rgba(133, 133, 133, 0.2), 0 1px 2px 0 rgba(111, 111, 111, 0.2);
+    width: 400px;
+    height : 300px;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 15px;
+    background-color: white;
+    height: 700px;
+}
+
+form{
+    margin: 10px 30px;
+}
+label{
+    margin: 0px 10px;
+}
+#content{
+    margin: 10px;
+}
+.product-tile-holder{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 10px;
+    padding: 30px 0;
+    width: max-content;
+   
+}
+.indiv-tile-holder{
+    display: flex;
+    height: max-content;
+    width: 250px;
+    flex-direction: column;
+    align-items: center;
+    margin: 7px;
+    padding: 10px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+}
+.indiv-tile-holder img{
+    height: 210px;
+    width : 165px;
+    margin-bottom: 3px;
+}
+.indiv-tile-holder p{
+    font-size: 12px;
+}
+.sort-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0px;
+}
+s{
+    margin: 0px 10px;
+}
+#product-modal{
+    display: none;
+    margin-top: 10px;
+    width: 75%;
+}
+#product-modal img{
+    height :330px;
+    width: 330px;
+    padding: 10px;
+}
+#product-description{
+    margin: 30px 100px;
+}
+
+#product-description div{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#option{
+    display: flex;
+    flex-direction: row;
+}
+.size-option{
+    padding: 20px;
+    margin: 0px 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+.size-option:hover{
+    background-color: rgb(50, 2, 2);
+    color: white;
+    cursor: pointer;
+}
+#xbtn{
+     background-color: transparent;
+   border-color: transparent; 
+    outline: 0;
+    height : 20px;
+    width : 20px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: -805px;
+    margin-top: -0px;
+   
+    border-radius: 50px;
+    padding: 15px;
+    color: red;
+    cursor: pointer;
+   
+}
+
+#product-img-list{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-column-gap: 5px;
+    padding: 5px 0;
+    margin-right: 25px;
+   
+}
+.cartdiv{
+    display: flex;
+    height: max-content;
+    width: 250px;
+    flex-direction: column;
+    align-items: center;
+    margin: 7px;
+    padding: 10px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+}
+.cartdiv img{
+    height: 210px;
+    width : 165px;
+    margin-bottom: 3px;
+}
+.cartdiv p{
+    font-size: 12px;
+}
+#cart-modal-content{
+    display: none;
+}
+#cart-list{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-column-gap: 3px;
+    padding: 5px 0;
+}
+#price-list{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 800px ;
+    max-width: 500px;
+    border: 2px solid rgb(239, 234, 234);
+    background: white;
+}
+#price-list #buybtn{
+    margin-top: 20px;
+    margin-left: 150px;
+    cursor: pointer;
+    background-color: rgb(152, 223, 46);
+    width: 70px;
+    height: 25px;
+    padding: 2px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+#price-list div{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#success{
+    display: none;
+    color: blue;
+    font-size: 24px;
+}
